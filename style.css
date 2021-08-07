@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #454140;
+  z-index: -2;
+}
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 300px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: white;
+  font-family: verdana;
+}
+
+.home li a::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 0px;
+  background: crimson;
+  transform: translateX(-8%) translateY(-3%);
+  transition: 0.3s ease;
+  z-index: -1;
+
+}
+
+.home li a:hover::before {
+  width: 80px;
+}
+
+.home li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid crimson;
+  width: 0px;
+  height: 8px;
+  transform: translateX(-91%) translateY(230%);
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+
+.home li a:hover::after {
+  width: 80px;
+}
+
+
+
+.about li a::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 0px;
+  background: crimson;
+  transform: translateX(-6%) translateY(-3%);
+  transition: 0.3s ease;
+  z-index: -1;
+
+}
+.about li a:hover::before {
+  width: 88px;
+}
+.about li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid crimson;
+  width: 0px;
+  height: 8px;
+  transform: translateX(-94.5%) translateY(230%);
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+.about li a:hover::after {
+  width: 88px;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 0px;
+  background: crimson;
+  transform: translateX(-49%) translateY(-3%);
+  transition: 0.3s ease;
+
+}
+.contact:hover::before {
+  width: 118px;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid crimson;
+  width: 0px;
+  height: 8px;
+  transform: translateX(-50%) translateY(5%);
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+.contact:hover::after {
+  width: 118px;
+}
+
+
+.faq::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 0px;
+  background: crimson;
+  transform: translateX(-49%) translateY(-3%);
+  transition: 0.3s ease;
+
+}
+.faq:hover::before {
+  width: 54px;
+}
+.faq::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid crimson;
+  width: 0px;
+  height: 10px;
+  transform: translateX(-50%) translateY(5%);
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+.faq:hover::after {
+  width: 54px;
+}
